@@ -14,7 +14,8 @@ print(f'{user_name}, ответьте, пожалуйста, на несколь
 while True:
     try:
         # Ввод возраста пользователя
-        user_age = input('Сколько Вам лет? (введите целое число, например 25): ')
+        user_age = input(
+            'Сколько Вам лет? (введите целое число, например 25): ')
         user_age_int = int(user_age)
         break
     except ValueError:
@@ -23,7 +24,8 @@ while True:
 while True:
     try:
         # Ввод веса пользователя
-        user_weight = input('Ваш вес (кг)? (введите числом напимер 75.5 или 75,5): ')
+        user_weight = input(
+            'Ваш вес (кг)? (введите числом напимер 75.5 или 75,5): ')
         user_weight_fl = float(user_weight.replace(',', '.'))
         break
     except ValueError:
@@ -32,7 +34,8 @@ while True:
 while True:
     try:
         # Ввод роста пользователя
-        user_height = input('Ваш рост (м)? (введите числом например 1.75 или 1,75): ')
+        user_height = input(
+            'Ваш рост (м)? (введите числом например 1.75 или 1,75): ')
         user_height_fl = float(user_height.replace(',', '.'))
         break
     except ValueError:
